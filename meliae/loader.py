@@ -195,13 +195,13 @@ class _ObjSummary(object):
         return '\n'.join(out)
 
     def by_size(self):
-        summaries = sorted(self.type_summaries.itervalues(),
+        summaries = sorted(six.itervalues(self.type_summaries),
                            key=lambda x: (x.total_size, x.count),
                            reverse=True)
         self.summaries = summaries
 
     def by_count(self):
-        summaries = sorted(self.type_summaries.itervalues(),
+        summaries = sorted(six.itervalues(self.type_summaries),
                            key=lambda x: (x.count, x.total_size),
                            reverse=True)
         self.summaries = summaries
