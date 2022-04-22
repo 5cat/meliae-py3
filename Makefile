@@ -1,9 +1,4 @@
-all: build_inplace
-
-check:
-	tox
-
-build_inplace:
-	python setup.py build_ext -i
+build:
+	python setup.py bdist_wheel
 
 .PHONY: all build_inplace
