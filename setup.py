@@ -29,7 +29,7 @@ def config():
 
     ext = []
     kwargs = {
-        "name": "meliae-py3",
+        "name": "meliae",
         "version": meliae.__version__,
         "description": "Python Memory Usage Analyzer",
         "author": "John Arbash Meinel",
@@ -37,7 +37,7 @@ def config():
         "url": "https://launchpad.net/meliae",
         "license": "GNU GPL v3",
         "download_url": "https://launchpad.net/meliae/+download",
-        "packages": ["meliae-py3"],
+        "packages": ["meliae"],
         "scripts": ["strip_duplicates.py"],
         "ext_modules": ext,
         "classifiers": [
