@@ -9,5 +9,5 @@ This repository was created from the [Meliae launchpad project](https://launchpa
 
     bzr fast-export --git-branch=dev lp:~cjwatson/meliae/py3-obj-summary | GIT_DIR=meliae-py3/.git git fast-import
 
-The [dev branch](https://github.com/cgrtrifork/meliae-py3/tree/dev) contains the state of code from the import.
+Then it was merged to the [master branch](https://github.com/cgrtrifork/meliae-py3/tree/master), which contains the state of code from the import.
 
